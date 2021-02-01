@@ -248,6 +248,69 @@ function towerOfHanoi(startRod, destinationRod, extraRod, discs) {
 
 Solve the drills 1 - 7 from your previous checkpoint (Recursion) iteratively.
 
+### Counting Sheep
+
+```
+function jumpSheep(numOfSheep) {
+  for (numOfSheep; numOfSheep > 0; numOfSheep--) {
+    console.log(`${numOfSheep}:Another sheep jumps over the fence`);
+  }
+  console.log("All sheep jumped over the fence");
+}
+```
+
+### Power Calculator
+
+```
+function powerCalculator(base, exp) {
+  if (exp < 0) {
+    return "exponent should be >= 0";
+  }
+  if (exp === 0) {
+    return 1;
+  }
+  if (exp === 1) {
+    return base;
+  }
+  let ans = base;
+  for (let i = 2; i <= exp; i++) {
+    ans *= base;
+  }
+  return ans;
+}
+```
+
+### Reverse String
+
+```
+function reverseString(str) {
+  let strArr = str.split("");
+  let newStr = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    newStr += strArr[i];
+  }
+  return newStr;
+}
+```
+
+### nth Triangular Number
+
+```
+function nthTriangularNumber(n) {
+  let nth = 0;
+  for (let i = 0; i <= n; i++) {
+    nth += i;
+  }
+  return nth;
+}
+```
+
+### String Splitter
+
+```
+
+```
+
 ## 13. Recursive Big O
 
 Take your solutions from the recursive exercises that you completed in the previous checkpoint and identify the time complexities (big O) of each of them.
