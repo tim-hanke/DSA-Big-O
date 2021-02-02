@@ -359,6 +359,82 @@ function factorial(n) {
 
 Take your solutions from the recursive exercises that you completed in the previous checkpoint and identify the time complexities (big O) of each of them.
 
+### Counting Sheep
+
+- `O(n)`
+
+### Power Calculator
+
+- `O(n)`
+
+### Reverse String
+
+- `O(n)`
+
+### nth Triangular Number
+
+- `O(n)`
+
+### String Splitter
+
+- `O(n)`
+
+### Fibonacci
+
+- `O(2^n)`
+
+### Factorial
+
+- `O(n)`
+
+### Find a way out of the maze
+
+- `O(n)`
+
+### Find ALL the ways out of the maze
+
+- `O(3^n)`
+
+### Anagrams
+
+- `O(n^2)`
+
+### Organization Chart
+
+- `O(n^2)`
+
+### Binary Representation
+
+- `O(n)`
+
 ## 14. Iterative Big O
 
 Take your solutions from the iterative exercises today and identify the time complexities (big O) of each of them.
+
+### Counting Sheep
+
+- `O(n)`
+
+### Power Calculator
+
+- `O(n)`
+
+### Reverse String
+
+- `O(n)`
+
+### nth Triangular Number
+
+- `O(n)`
+
+### String Splitter
+
+- `O(n)`
+
+### Fibonacci
+
+- `O(n)`
+
+### Factorial
+
+- `O(n)`
