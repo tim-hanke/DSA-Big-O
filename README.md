@@ -308,7 +308,51 @@ function nthTriangularNumber(n) {
 ### String Splitter
 
 ```
+function stringSplit(str, spl) {
+  if (!str.includes(spl) || str.length === 1) {
+    return [str];
+  }
+  let splitStringArray = [];
+  let splIndex;
+  if (spl.length === 0) {
+    splIndex = 1;
+  } else {
+    splIndex = str.indexOf(spl);
+  }
 
+  while (str.includes(spl)) {
+    const slice = str.slice(0, splIndex);
+    splitStringArray.push(slice);
+    str = str.slice(splIndex + spl.length);
+    splIndex = spl.length === 0 ? 1 : str.indexOf(spl);
+  }
+  splitStringArray.push(str);
+  return splitStringArray;
+}
+```
+
+### Fibonacci
+
+```
+function fibonacciSequence(num) {
+  let sequence = [1, 1];
+  for (let i = 2; i < num; i++) {
+    sequence.push(sequence[i - 1] + sequence[i - 2]);
+  }
+  return sequence;
+}
+```
+
+### Factorial
+
+```
+function factorial(n) {
+  let factorial = 1;
+  for (let i = 2; i <= n; i++) {
+    factorial *= i;
+  }
+  return factorial;
+}
 ```
 
 ## 13. Recursive Big O
